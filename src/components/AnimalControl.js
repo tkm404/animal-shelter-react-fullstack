@@ -25,8 +25,7 @@ function AnimalControl() {
       });
   }, [])
 
-  const sortedAnimals = animalsList.sort((a, b) => a.Name - b.Name);
-
+  const sortedAnimals = animalsList.sort((a, b) => a.Name.localeCompare(b.Name));
 
   if (error) {
     return <h1>Error: {error}</h1>
@@ -37,7 +36,7 @@ function AnimalControl() {
       <React.Fragment>
         <h1>Animals in the Shelter</h1>
         <ul>
-          {animalsList.map((animal) =>
+          {sortedAnimals.map((animal) =>
           <li key={animal.AnimalId}>
             <h3>Oi! {animal.Name}</h3> 
             <p>Species: {animal.Species}</p>

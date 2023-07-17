@@ -1,3 +1,13 @@
+# Animal Shelter React Frontend
+
+### Instructions:
+(quick and dirty, follow instructions in AnimalShelterMonoRepo for info to set up database/C# stuff)
+* clone "AnimalShelterMonoRepo" from my repositories
+* cd into AnimalShelterApi directory
+* run dotnet run start
+* navigate to this app's production directory
+* run npm run start
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
